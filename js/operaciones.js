@@ -34,9 +34,9 @@ function signo() {
 	// ENTONCES se imprimirá que es POSITIVO
 	// En caso contrario se imprimirá que es NEGATIVO
 	if (numero01>=0) {
-		document.write("= El número ingresado es POSITIVO");
+		alert("= El número ingresado es POSITIVO");
 	} else {
-		document.write("= El número ingresado es NEGATIVO");
+		alert("= El número ingresado es NEGATIVO");
 	}
 }
 
@@ -50,8 +50,7 @@ function calculadora() {
 	numero05=Number(prompt("4: Dividir"));
 	// De acuerdo a la elección se compara contra cada una de las
 	// opciones para realizarla y terminar el programa
-	document.write("¿Que operación deseas realizar?");
-	opcion_num = prompt();
+	opcion_num = Number(prompt("¿Que operación deseas realizar?",));
 	// Operación: Suma
 	if (opcion_num==1) {
 		numero01 = Number(prompt());
@@ -78,7 +77,7 @@ function calculadora() {
 					numero01 = Number(prompt("Ingresar el primer valor"));
 					numero02 = Number(prompt("Ingresar el segundo valor"));
 					resultado = numero01/numero02;
-					document.write("La división de ",numero01,"/",numero02,"=",resultado,);
+					alert("La división de ",numero01,"/",numero02,"=",resultado,);
 				}
 			}
 		}
@@ -144,3 +143,5 @@ function mescalendario() {
 		falla=Number(prompt("Deberá iniciar el programa",));
 	}
 }
+
+
