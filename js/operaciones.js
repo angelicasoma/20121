@@ -145,3 +145,41 @@ function mescalendario() {
 }
 
 
+// Este codigo ha sido generado por el modulo psexport 20180802-w32 de PSeInt.
+// Es posible que el codigo generado no sea completamente correcto. Si encuentra
+// errores por favor reportelos en el foro (http://pseint.sourceforge.net).
+
+// Este es un ejemplo del uso de ciclos for para
+// imprimir la tabla de multiplicar de un número
+// ingresado por el usuario
+function tablamultiplicar() {
+	var contador01, numero01;
+	numero01 = Number(prompt("Ingresar un número para generar su tabla de multiplicar"));
+	// Con este ciclo se genera la multiplicación del número ingresado
+	// en cada iteración por el valor del contador (variable de control)
+	// desde 1 hasta llegar a 10 de uno en uno
+	for (contador01=1;contador01<=10;contador01++) {
+		// Desplegar el valor de la multiplicación actual
+		alert(numero01,"x",contador01,"=",(numero01*contador01),'<BR/>');
+	}
+}
+
+// Este codigo ha sido generado por el modulo psexport 20180802-w32 de PSeInt.
+// Es posible que el codigo generado no sea completamente correcto. Si encuentra
+// errores por favor reportelos en el foro (http://pseint.sourceforge.net).
+
+// Este es un ejemplo para calcular el salario semanal de un trabajador
+function salariosemanal() {
+	var base, horas, salario;
+	// Se desplegará en pantalla un mensaje al usuario solicitando
+	// ingresar por teclado el número de horas trabajadas por semana
+	// e ingresar por teclado el salario base por hora
+	horas = Number(prompt("Ingresar el número de horas trabajadas en la semana ..."));
+	document.write("Ingresar el salario base por hora ...",'<BR/>');
+	base = Number(prompt("Ingresar el salario base por hora ..."));
+	// Calcular el salario con los datos ingresados
+	salario = horas*base;
+	// Desplegar el salario semanal
+	document.write("El salario semanal será de: ",salario,"pesos",'<BR/>');
+	horas = Number(prompt());
+}
